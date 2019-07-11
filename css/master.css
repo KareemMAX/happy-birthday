@@ -15,6 +15,11 @@
 #party{
   margin:10pt;
   font-size:7em;
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 60s infinite linear;
 }
 .counters{
   font-size:2em;
@@ -26,6 +31,16 @@
 
 #leftto{
   font-size:3em;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(-360deg);
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -40,6 +55,11 @@
 
   #party{
     font-size: 4em;
+    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 60s infinite linear;
   }
 
   .counters{
