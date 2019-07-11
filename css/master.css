@@ -3,7 +3,29 @@
     border-radius: 0rem!important;
     background-image: url(../img/timer-bg.jpg);
     background-size: 180%;
+    background-position-y: 40%;
     margin-bottom: 0px!important;
+}
+
+.days{
+  margin-left: 30%;
+  margin-top: -10%;
+}
+
+#party{
+  margin:10pt;
+  font-size:7em;
+}
+.counters{
+  font-size:2em;
+}
+
+#d{
+  font-size: 10em;
+}
+
+#leftto{
+  font-size:3em;
 }
 
 @media (max-width: 767.98px) {
@@ -14,5 +36,25 @@
     background-size: 300%;
     background-position-x: 30%;
     margin-bottom: 0px!important;
+  }
+
+  #party{
+    font-size: 4em;
+  }
+
+  .counters{
+    font-size:1.5em;
+  }
+
+  #d{
+    font-size: 4em;
+  }
+
+  .days{
+    margin-top: 0;
+  }
+
+  #leftto{
+    font-size:1.7em;
   }
 }
