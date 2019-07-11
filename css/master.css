@@ -1,4 +1,13 @@
-.xxl{
+.timer{
     height: 100vh;
     border-radius: 0rem!important;
+    background-image: url(../img/timer-bg.jpg);
+    background-size: 180%;
+}
+
+@media (max-width: 767.98px) {
+  .timer{
+    background-size: 300%;
+    background-position-x: 30%;
+  }
 }
