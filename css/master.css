@@ -3,11 +3,16 @@
     border-radius: 0rem!important;
     background-image: url(../img/timer-bg.jpg);
     background-size: 180%;
+    margin-bottom: 0px!important;
 }
 
 @media (max-width: 767.98px) {
   .timer{
+    height: 100vh;
+    border-radius: 0rem!important;
+    background-image: url(../img/timer-bg.jpg);
     background-size: 300%;
     background-position-x: 30%;
+    margin-bottom: 0px!important;
   }
 }
