@@ -1,14 +1,31 @@
-// Set the date we're counting down to
-var countDownDate = new Date("October 21, 2020 00:00:00").getTime();
+// Set timer to:
+var day = 21
+var month = 10
+
+// Get today's date and time
+var now = new Date();
+
+var year = now.getFullYear();
+if (now.getMonth() + 1 > month) {
+  year++;
+}
+else if(now.getMonth() + 1 == month){
+  if(now.getDate() >= day){
+    year++;
+  }
+}
+
+var countDownDate = new Date(year, month - 1, day);
+console.log(countDownDate);
+var countDownTimeStamp = countDownDate.getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
+  var now = new Date();
+  var nowTimeStamp = now.getTime();
+  
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = countDownTimeStamp - nowTimeStamp;
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -20,10 +37,4 @@ var x = setInterval(function() {
   document.getElementById("h").innerHTML = hours + " hours";
   document.getElementById("m").innerHTML = minutes + " minutes";
   document.getElementById("s").innerHTML = seconds + " seconds";
-
-/*
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }*/
 }, 1000);
